@@ -43,11 +43,12 @@ test:
 
 about:
   home: https://CRAN.R-project.org/package=timsac
-  license: GPL (>= 2)
+  license: GPL-2.0-or-later
   summary: Functions for statistical analysis, prediction and control of time series based mainly
     on Akaike and Nakagawa (1988) <ISBN 978-90-277-2786-2>.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
