@@ -1,4 +1,4 @@
-{% set version = '1.3.6' %}
+{% set version = "1.3.8" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/timsac_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/timsac/timsac_{{ version }}.tar.gz
-  sha256: 8fde280e3d2db81316990f3b9afeeba621624d80eb09deae9b432635710ac9a0
+  sha256: 9cea5a4d187196569101d5f38cb5ccd6159d997dd16a4456492984c72d235d80
 
 build:
-  merge_build_host: True  # [win]
-  number: 5
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -44,8 +44,7 @@ test:
 about:
   home: https://CRAN.R-project.org/package=timsac
   license: GPL-2.0-or-later
-  summary: Functions for statistical analysis, prediction and control of time series based mainly
-    on Akaike and Nakagawa (1988) <ISBN 978-90-277-2786-2>.
+  summary: Functions for statistical analysis, prediction and control of time series based mainly on Akaike and Nakagawa (1988) <ISBN 978-90-277-2786-2>.
   license_family: GPL3
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
