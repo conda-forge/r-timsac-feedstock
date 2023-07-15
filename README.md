@@ -3,6 +3,7 @@ About r-timsac-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-timsac-feedstock/blob/main/LICENSE.txt)
 
+
 About r-timsac
 --------------
 
@@ -11,6 +12,7 @@ Home: https://CRAN.R-project.org/package=timsac
 Package license: GPL-2.0-or-later
 
 Summary: Functions for statistical analysis, prediction and control of time series based mainly on Akaike and Nakagawa (1988) <ISBN 978-90-277-2786-2>.
+
 About r-timsac
 --------------
 
