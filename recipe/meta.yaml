@@ -1,4 +1,4 @@
-{% set version = "1.3.8-4" %}
+{% set version = "1.3.8-6" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/timsac_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/timsac/timsac_{{ version }}.tar.gz
-  sha256: 53ce2658286e18472110444d4157136ab7aa95661b2a7a24c8ea91103eb3b83e
+  sha256: 787d2f38ff156282e655c969c50814f55a69461946ab67702f56e85908ad8447
 
 build:
-  number: 2
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
